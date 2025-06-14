@@ -64,9 +64,7 @@ app.post("/", async (req, res) => {
         const relevantDocs = await vectorStore.similaritySearch(lastUserMessage, 3);
         const books = relevantDocs.map(doc => doc.pageContent).join("\n\n");
 
-        const context = giveContext({
-          books
-        });
+        const context = giveContext(books);
 
         const chatMessages = [
             new SystemMessage(context),
