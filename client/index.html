@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js" type="module"></script>
+    <title>Hunger Games AI Assistant</title>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Presenting: Your Capitol Approved AI</h1>
+        <div class="Capitol-logo">
+            <image class="mockingjay" src="./img/logo.png"></image>
+        </div>
+    </header>
+
+    <div class="tribute-card">
+        <h2>Welcome Tribute</h2>
+        <div class="features">
+            <h3>District Instructions:</h3>
+            <ul>
+                <li>Ask your questions about the Hunger Games - Book 1</li>
+                <li>Explore alternate storylines, endings, and character perspectives</li>
+                <li>Learn about the complexity of Panem</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="chat-area">
+        <section id="output" class="message-feed"></section>
+
+        <div class="chat-section">
+            <form>
+                <input type="text" placeholder="Stel je vraag aan het Capitool..." id="chatfield" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="resetChat" type="button">Start the new games</button>
+
+    <footer>
+        <p>"May the odds be ever in your favor"</p>
+    </footer>
+</main>
+</body>
+</html>
